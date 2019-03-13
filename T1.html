@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+</head>
+
+<body style="background-color:powderblue;">
+    <h1>你好!!</h1>
+    <p>請輸入你的資料</p>
+    <form method="POST" autocomplete="on">
+        <p><label>
+                姓名: <input type="text" id="姓名"  placeholder="姓跟名"/>(姓跟名)<br>
+            </label></p>
+        <p><label>
+                學號: <input type="text" id="學號" placeholder="D1234567" /><br>
+            </label></p>
+        <p><label>
+                密碼: <input type="password" id="密碼"  />(就密碼)<br>
+            </label></p>
+        <p><label>
+                電子信箱: <input type="email" id="email" placeholder="123@gmail.com" />(要打@)<br>
+            </label></p>
+
+        <label for="meeting">生日：</label>
+        <input type="date" id="meeting"  value="2019-01-11" /><br>
+
+        <tr>
+            <td>性別</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked>Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </td>
+        </tr> <br>
+
+      
+
+        <label>
+            專長:<input name="a" type="checkbox" value="電腦系統">電腦系統
+        </label>
+        <label>
+            <input name="a" type="checkbox" value="網路資安">網路資安
+        </label>
+        <label>
+            <input name="a" type="checkbox" value="軟體工程">軟體工程
+        </label>
+
+        <p><label for="txtlist">
+                年級: <input type="text" id="txtlist" placeholder="選你的年級" list="grade" /> <br>
+                <datalist id="grade">
+                    <option value="大一"></option>
+                    <option value="大二"></option>
+                    <option value="大三"></option>
+                    <option value="大四"></option>
+                </datalist>
+            </label></p>
+
+        <p>
+            <input type="submit" value="註冊" />
+            <input type="reset" value="重設" />
+        </p>
+    </form>
+
+    
+
+</body>
+
+</html>
